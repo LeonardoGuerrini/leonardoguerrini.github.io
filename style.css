@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: white;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        background: #1A1A1A;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .nav {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .nav-item {
+        color: white;
+        font-size: 18px;
+    }
+    
+    .nav-item:hover {
+        color: #304BCD;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #conteudo-principal {
+        background: #1B1B1B;
+        text-align: center;
+        padding: 100px;
+        letter-spacing: 0;
+        color: white;
+    }
+    
+    #titulo {
+        font-size: 38px;
+    }
+    
+    #subtitulo {
+        margin-top: 10px;
+        font-size: 24px;
+        hyphens: auto;
+    }
+    
+    #front-end {
+        color: #304BCD;
+    }
+    
+    #botao-contato {
+        font-size: 24px;
+        padding: 4px 10px;
+        margin-top: 50px;
+        display: inline-block;
+        background: white;
+        border: solid 2px white;
+        border-radius: 20px;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+    
+    #botao-contato:hover {
+        color: white;
+        background-color: #1B1B1B;
+    }
+    
+    #social {
+        font-size: 35px;
+        text-align: center;
+        padding: 100px;
+    }
+    
+    #link {
+        border: solid 0.4px black;
+        border-radius: 20px;
+        font-size: 25px;
+        color: black;
+        padding: 0px 10px;
+        transition: all 0.2s;
+        list-style-type: none;
+    }
+    
+    #link:hover {
+        color: white;
+        background: black;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    #contato {
+        font-size: 35px;
+        text-align: center;
+        padding: 110px;
+    }
+    
+    #contato-titulo {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        background: #1A1A1A;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .nav {
+        display: flex;
+        gap: 45px;
+    }
+    
+    .nav-item {
+        color: white;
+        font-size: 24px;
+    }
+    
+    .nav-item:hover {
+        color: #304BCD;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #conteudo-principal {
+        background: #1B1B1B;
+        text-align: center;
+        padding: 100px;
+        color: white;
+    }
+    
+    #titulo {
+        font-size: 60px;
+    }
+    
+    #subtitulo {
+        font-size: 29px;
+    }
+    
+    #front-end {
+        color: #304BCD;
+    }
+    
+    #botao-contato {
+        font-size: 30px;
+        padding: 4px 10px;
+        margin-top: 50px;
+        display: inline-block;
+        background: white;
+        border: solid 2px white;
+        border-radius: 20px;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+    
+    #botao-contato:hover {
+        color: white;
+        background-color: #1B1B1B;
+    }
+    
+    #social {
+        font-size: 40px;
+        text-align: center;
+        padding: 100px;
+    }
+    
+    #link {
+        border: solid 0.4px black;
+        border-radius: 20px;
+        font-size: 30px;
+        color: black;
+        padding: 0px 10px;
+        transition: all 0.2s;
+        list-style-type: none;
+    }
+    
+    #link:hover {
+        color: white;
+        background: black;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    #contato {
+        font-size: 35px;
+        text-align: center;
+        padding: 110px;
+    }
+    
+    #contato-titulo {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    #discord {
+        color: black;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        background: #1A1A1A;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .nav {
+        display: flex;
+        gap: 45px;
+    }
+    
+    .nav-item {
+        color: white;
+        font-size: 24px;
+    }
+    
+    .nav-item:hover {
+        color: #304BCD;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #conteudo-principal {
+        background: #1B1B1B;
+        text-align: center;
+        padding: 100px;
+        letter-spacing: .1rem;
+        color: white;
+    }
+    
+    #titulo {
+        font-size: 60px;
+    }
+    
+    #subtitulo {
+        font-size: 29px;
+    }
+    
+    #front-end {
+        color: #304BCD;
+    }
+    
+    #botao-contato {
+        font-size: 30px;
+        padding: 4px 10px;
+        margin-top: 50px;
+        display: inline-block;
+        background: white;
+        border: solid 2px white;
+        border-radius: 20px;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+    
+    #botao-contato:hover {
+        color: white;
+        background-color: #1B1B1B;
+    }
+    
+    #social {
+        font-size: 35px;
+        text-align: center;
+        padding: 100px;
+    }
+    
+    #link {
+        border: solid 0.4px black;
+        border-radius: 20px;
+        font-size: 30px;
+        color: black;
+        padding: 0px 10px;
+        transition: all 0.2s;
+        list-style-type: none;
+    }
+    
+    #link:hover {
+        color: white;
+        background: black;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    #contato {
+        font-size: 35px;
+        text-align: center;
+        padding: 110px;
+    }
+    
+    #contato-titulo {
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    #discord {
+        color: black;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        background: #1A1A1A;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .nav {
+        display: flex;
+        gap: 45px;
+    }
+    
+    .nav-item {
+        color: white;
+        font-size: 20px;
+    }
+    
+    .nav-item:hover {
+        color: #304BCD;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #conteudo-principal {
+        background: #1B1B1B;
+        text-align: center;
+        padding: 100px;
+        letter-spacing: .1rem;
+        color: white;
+    }
+    
+    #titulo {
+        font-size: 60px;
+    }
+    
+    #subtitulo {
+        font-size: 29px;
+    }
+    
+    #front-end {
+        color: #304BCD;
+    }
+    
+    #botao-contato {
+        font-size: 28px;
+        padding: 4px 10px;
+        margin-top: 50px;
+        display: inline-block;
+        background: white;
+        border: solid 2px white;
+        border-radius: 20px;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+    
+    #botao-contato:hover {
+        color: white;
+        background-color: #1B1B1B;
+    }
+    
+    #social {
+        font-size: 35px;
+        text-align: center;
+        padding: 100px;
+    }
+    
+    #link {
+        border: solid 0.4px black;
+        border-radius: 20px;
+        font-size: 28px;
+        color: black;
+        padding: 0px 10px;
+        transition: all 0.2s;
+        list-style-type: none;
+    }
+    
+    #link:hover {
+        color: white;
+        background: black;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    #contato {
+        font-size: 35px;
+        text-align: center;
+        padding: 110px;
+    }
+    
+    #contato-titulo {
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    #discord {
+        color: black;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        background: #1A1A1A;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .nav {
+        display: flex;
+        gap: 45px;
+    }
+    
+    .nav-item {
+        color: white;
+        font-size: 20px;
+    }
+    
+    .nav-item:hover {
+        color: #304BCD;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #conteudo-principal {
+        background: #1B1B1B;
+        text-align: center;
+        padding: 100px;
+        letter-spacing: .1rem;
+        color: white;
+    }
+    
+    #titulo {
+        font-size: 60px;
+    }
+    
+    #subtitulo {
+        font-size: 29px;
+    }
+    
+    #front-end {
+        color: #304BCD;
+    }
+    
+    #botao-contato {
+        font-size: 28px;
+        padding: 4px 10px;
+        margin-top: 50px;
+        display: inline-block;
+        background: white;
+        border: solid 2px white;
+        border-radius: 20px;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+    
+    #botao-contato:hover {
+        color: white;
+        background-color: #1B1B1B;
+    }
+    
+    #social {
+        font-size: 35px;
+        text-align: center;
+        padding: 100px;
+    }
+    
+    #link {
+        border: solid 0.4px black;
+        border-radius: 20px;
+        font-size: 28px;
+        color: black;
+        padding: 0px 10px;
+        transition: all 0.2s;
+        list-style-type: none;
+    }
+    
+    #link:hover {
+        color: white;
+        background: black;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    #contato {
+        font-size: 35px;
+        text-align: center;
+        padding: 110px;
+    }
+    
+    #contato-titulo {
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    #discord {
+        color: black;
+        font-size: 25px;
+    }
+}
